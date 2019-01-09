@@ -1,0 +1,15 @@
+<script>
+window.onerror = function(m,u,l){
+alert('Error:'+m+'\nURL:'+u+'\nLine:'+l);return true;};
+</script>
+<img src="" style="width:auto;height:200%">
+</img>
+<script>
+window.onload = f1;
+
+function f1(){
+a = window.location.href;
+document.getElementsByTagName("img")[0].src = a.substring(a.split("?")[0].length + 1,a.length);
+}
+
+</script>
